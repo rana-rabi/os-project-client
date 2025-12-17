@@ -8,11 +8,26 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     socket = new QTcpSocket(this);
 
-    socket->connectToHost("127.0.0.1", 8080);
-    ui->chatBox->append("-- Connecting to server...");
+    connect(ui->connectButton, &QPushButton::clicked, this, [=]() {
+        QString ip = ui->serverIP->text().trimmed();
+
+        if (ip.isEmpty()) {
+            ui->chatBox->append("-- Please enter a server IP");
+            return;
+        }
+
+        ui->chatBox->append("-- Connecting to " + ip + ":8080 ...");
+
+        socket->abort();
+        socket->connectToHost(ip, 8080);
+    });
+
+    // socket->connectToHost("127.0.0.1", 8080);
+    // ui->chatBox->append("-- Connecting to server...");
 
     connect(socket, &QTcpSocket::connected, this, [=](){
         ui->chatBox->append("-- Connected to server");
+        ui->connectButton->setEnabled(false);
     });
 
     connect(socket, &QTcpSocket::errorOccurred, this, [=](){

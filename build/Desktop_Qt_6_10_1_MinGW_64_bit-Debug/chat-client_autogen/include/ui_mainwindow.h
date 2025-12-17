@@ -29,6 +29,8 @@ public:
     QLineEdit *messageInput;
     QPushButton *sendButton;
     QLineEdit *usernameInput;
+    QLineEdit *serverIP;
+    QPushButton *connectButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -41,17 +43,23 @@ public:
         centralwidget->setObjectName("centralwidget");
         chatBox = new QTextEdit(centralwidget);
         chatBox->setObjectName("chatBox");
-        chatBox->setGeometry(QRect(10, 50, 430, 371));
+        chatBox->setGeometry(QRect(10, 80, 430, 341));
         chatBox->setReadOnly(true);
         messageInput = new QLineEdit(centralwidget);
         messageInput->setObjectName("messageInput");
         messageInput->setGeometry(QRect(10, 430, 430, 48));
         sendButton = new QPushButton(centralwidget);
         sendButton->setObjectName("sendButton");
-        sendButton->setGeometry(QRect(10, 490, 430, 40));
+        sendButton->setGeometry(QRect(170, 490, 271, 40));
         usernameInput = new QLineEdit(centralwidget);
         usernameInput->setObjectName("usernameInput");
         usernameInput->setGeometry(QRect(10, 10, 430, 28));
+        serverIP = new QLineEdit(centralwidget);
+        serverIP->setObjectName("serverIP");
+        serverIP->setGeometry(QRect(10, 40, 431, 28));
+        connectButton = new QPushButton(centralwidget);
+        connectButton->setObjectName("connectButton");
+        connectButton->setGeometry(QRect(10, 490, 151, 40));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -73,6 +81,9 @@ public:
         messageInput->setPlaceholderText(QCoreApplication::translate("MainWindow", "Enter your message...", nullptr));
         sendButton->setText(QCoreApplication::translate("MainWindow", "Send", nullptr));
         usernameInput->setPlaceholderText(QCoreApplication::translate("MainWindow", "Enter your name...", nullptr));
+        serverIP->setText(QCoreApplication::translate("MainWindow", "127.0.0.1", nullptr));
+        serverIP->setPlaceholderText(QCoreApplication::translate("MainWindow", "Enter Server IP", nullptr));
+        connectButton->setText(QCoreApplication::translate("MainWindow", "Connect To Server", nullptr));
     } // retranslateUi
 
 };

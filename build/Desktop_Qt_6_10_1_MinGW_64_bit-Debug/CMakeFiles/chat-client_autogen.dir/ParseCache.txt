@@ -385,6 +385,6 @@ C:/Users/rana-/Documents/chat-client/mainwindow.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Users/rana-/Documents/chat-client/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/chat-client_autogen/moc_predefs.h
  mdp:C:/Users/rana-/Documents/chat-client/mainwindow.h
+C:/Users/rana-/Documents/chat-client/main.cpp
 C:/Users/rana-/Documents/chat-client/mainwindow.cpp
  uic:./ui_mainwindow.h
-C:/Users/rana-/Documents/chat-client/main.cpp
