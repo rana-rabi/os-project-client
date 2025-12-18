@@ -346,6 +346,24 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/rana-/Documents/chat-client/ICommunicator.h",
+			"MU",
+			"EWIEGA46WW/moc_ICommunicator.cpp",
+			null
+		],
+		[
+			"C:/Users/rana-/Documents/chat-client/SharedMemoryClientCommunicator.h",
+			"MU",
+			"EWIEGA46WW/moc_SharedMemoryClientCommunicator.cpp",
+			null
+		],
+		[
+			"C:/Users/rana-/Documents/chat-client/TcpClientCommunicator.h",
+			"MU",
+			"EWIEGA46WW/moc_TcpClientCommunicator.cpp",
+			null
+		],
+		[
 			"C:/Users/rana-/Documents/chat-client/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -425,6 +443,16 @@
 	"SETTINGS_FILE" : "C:/Users/rana-/Documents/chat-client/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/chat-client_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/rana-/Documents/chat-client/SharedMemoryClientCommunicator.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/rana-/Documents/chat-client/TcpClientCommunicator.cpp",
+			"MU",
+			null
+		],
 		[ "C:/Users/rana-/Documents/chat-client/main.cpp", "MU", null ],
 		[ "C:/Users/rana-/Documents/chat-client/mainwindow.cpp", "MU", null ]
 	],

@@ -2,12 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QTcpSocket>
+#include "ICommunicator.h"
 
 QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
+namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
@@ -20,6 +18,8 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    QTcpSocket *socket;
+    ICommunicator *communicator;
+    void checkEnableSendButton();
 };
+
 #endif // MAINWINDOW_H

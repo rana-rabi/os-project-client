@@ -1,4 +1,4 @@
-C:/Users/rana-/Documents/chat-client/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/chat-client_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/rana-/Documents/chat-client/mainwindow.h \
+C:/Users/rana-/Documents/chat-client/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/chat-client_autogen/EWIEGA46WW/moc_TcpClientCommunicator.cpp: C:/Users/rana-/Documents/chat-client/TcpClientCommunicator.h \
   C:/Users/rana-/Documents/chat-client/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/chat-client_autogen/moc_predefs.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/QObject \
   C:/Qt/6.10.1/mingw_64/include/QtCore/QString \
@@ -26,7 +26,6 @@ C:/Users/rana-/Documents/chat-client/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
   C:/Qt/6.10.1/mingw_64/include/QtCore/qbytearraylist.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qbytearrayview.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qchar.h \
-  C:/Qt/6.10.1/mingw_64/include/QtCore/qcheckedint_impl.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qcompare.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qcompare_impl.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qcomparehelpers.h \
@@ -40,7 +39,6 @@ C:/Users/rana-/Documents/chat-client/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
   C:/Qt/6.10.1/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qdebug.h \
-  C:/Qt/6.10.1/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qfloat16.h \
@@ -52,16 +50,15 @@ C:/Users/rana-/Documents/chat-client/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
   C:/Qt/6.10.1/mingw_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qhash.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qhashfunctions.h \
+  C:/Qt/6.10.1/mingw_64/include/QtCore/qiodevice.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qiterator.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qlatin1stringview.h \
-  C:/Qt/6.10.1/mingw_64/include/QtCore/qline.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qlist.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qlogging.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qmalloc.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qmap.h \
-  C:/Qt/6.10.1/mingw_64/include/QtCore/qmargins.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qmath.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qmetacontainer.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qmetatype.h \
@@ -74,9 +71,7 @@ C:/Users/rana-/Documents/chat-client/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
   C:/Qt/6.10.1/mingw_64/include/QtCore/qobjectdefs_impl.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qoverload.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qpair.h \
-  C:/Qt/6.10.1/mingw_64/include/QtCore/qpoint.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qprocessordetection.h \
-  C:/Qt/6.10.1/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qrefcount.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qscopeguard.h \
@@ -85,7 +80,6 @@ C:/Users/rana-/Documents/chat-client/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
   C:/Qt/6.10.1/mingw_64/include/QtCore/qshareddata_impl.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qsharedpointer.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qsharedpointer_impl.h \
-  C:/Qt/6.10.1/mingw_64/include/QtCore/qsize.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qspan.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qstdlibdetection.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qstring.h \
@@ -129,40 +123,13 @@ C:/Users/rana-/Documents/chat-client/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
   C:/Qt/6.10.1/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qyieldcpu.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qaction.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qbitmap.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qbrush.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qcolor.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qcursor.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qfont.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qfontinfo.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qfontmetrics.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qfontvariableaxis.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qicon.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qimage.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qkeysequence.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qpaintdevice.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qpalette.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qpixelformat.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qpixmap.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qpolygon.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qregion.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qrgb.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qrgba64.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qtgui-config.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qtguiexports.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qtguiglobal.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qtransform.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qwindowdefs.h \
-  C:/Qt/6.10.1/mingw_64/include/QtGui/qwindowdefs_win.h \
-  C:/Qt/6.10.1/mingw_64/include/QtWidgets/QMainWindow \
-  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qmainwindow.h \
-  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qsizepolicy.h \
-  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtabwidget.h \
-  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
-  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
-  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qwidget.h \
+  C:/Qt/6.10.1/mingw_64/include/QtNetwork/QTcpSocket \
+  C:/Qt/6.10.1/mingw_64/include/QtNetwork/qabstractsocket.h \
+  C:/Qt/6.10.1/mingw_64/include/QtNetwork/qhostaddress.h \
+  C:/Qt/6.10.1/mingw_64/include/QtNetwork/qtcpsocket.h \
+  C:/Qt/6.10.1/mingw_64/include/QtNetwork/qtnetwork-config.h \
+  C:/Qt/6.10.1/mingw_64/include/QtNetwork/qtnetworkexports.h \
+  C:/Qt/6.10.1/mingw_64/include/QtNetwork/qtnetworkglobal.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/atomic \

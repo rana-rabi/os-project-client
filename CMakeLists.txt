@@ -9,7 +9,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Network)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Network)
 
 set(PROJECT_SOURCES
@@ -17,12 +17,22 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        ICommunicator.h
+        TcpClientCommunicator.h
+        TcpClientCommunicator.cpp
+        SharedMemoryClientCommunicator.h
+        SharedMemoryClientCommunicator.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(chat-client
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        ICommunicator.h
+        TcpClientCommunicator.h
+        TcpClientCommunicator.cpp
+        SharedMemoryClientCommunicator.h
+        SharedMemoryClientCommunicator.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET chat-client APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

@@ -18,9 +18,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>80</y>
+      <y>140</y>
       <width>430</width>
-      <height>341</height>
+      <height>301</height>
      </rect>
     </property>
     <property name="readOnly">
@@ -34,9 +34,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>430</y>
+      <y>447</y>
       <width>430</width>
-      <height>48</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="placeholderText">
@@ -61,7 +61,7 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>430</width>
+      <width>211</width>
       <height>28</height>
      </rect>
     </property>
@@ -72,9 +72,9 @@
    <widget class="QLineEdit" name="serverIP">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>40</y>
-      <width>431</width>
+      <x>230</x>
+      <y>10</y>
+      <width>211</width>
       <height>28</height>
      </rect>
     </property>
@@ -97,6 +97,48 @@
     <property name="text">
      <string>Connect To Server</string>
     </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>431</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Connection Mode</string>
+    </property>
+    <widget class="QRadioButton" name="tcpRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sockets</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="sharedMemoryRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>40</y>
+       <width>161</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Shared Memory</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

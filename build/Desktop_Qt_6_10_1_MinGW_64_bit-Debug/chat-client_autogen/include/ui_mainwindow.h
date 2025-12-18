@@ -11,10 +11,12 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
@@ -31,6 +33,9 @@ public:
     QLineEdit *usernameInput;
     QLineEdit *serverIP;
     QPushButton *connectButton;
+    QGroupBox *groupBox;
+    QRadioButton *tcpRadioButton;
+    QRadioButton *sharedMemoryRadioButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -43,23 +48,33 @@ public:
         centralwidget->setObjectName("centralwidget");
         chatBox = new QTextEdit(centralwidget);
         chatBox->setObjectName("chatBox");
-        chatBox->setGeometry(QRect(10, 80, 430, 341));
+        chatBox->setGeometry(QRect(10, 140, 430, 301));
         chatBox->setReadOnly(true);
         messageInput = new QLineEdit(centralwidget);
         messageInput->setObjectName("messageInput");
-        messageInput->setGeometry(QRect(10, 430, 430, 48));
+        messageInput->setGeometry(QRect(10, 447, 430, 31));
         sendButton = new QPushButton(centralwidget);
         sendButton->setObjectName("sendButton");
         sendButton->setGeometry(QRect(170, 490, 271, 40));
         usernameInput = new QLineEdit(centralwidget);
         usernameInput->setObjectName("usernameInput");
-        usernameInput->setGeometry(QRect(10, 10, 430, 28));
+        usernameInput->setGeometry(QRect(10, 10, 211, 28));
         serverIP = new QLineEdit(centralwidget);
         serverIP->setObjectName("serverIP");
-        serverIP->setGeometry(QRect(10, 40, 431, 28));
+        serverIP->setGeometry(QRect(230, 10, 211, 28));
         connectButton = new QPushButton(centralwidget);
         connectButton->setObjectName("connectButton");
         connectButton->setGeometry(QRect(10, 490, 151, 40));
+        groupBox = new QGroupBox(centralwidget);
+        groupBox->setObjectName("groupBox");
+        groupBox->setGeometry(QRect(10, 50, 431, 80));
+        tcpRadioButton = new QRadioButton(groupBox);
+        tcpRadioButton->setObjectName("tcpRadioButton");
+        tcpRadioButton->setGeometry(QRect(20, 40, 111, 25));
+        tcpRadioButton->setChecked(true);
+        sharedMemoryRadioButton = new QRadioButton(groupBox);
+        sharedMemoryRadioButton->setObjectName("sharedMemoryRadioButton");
+        sharedMemoryRadioButton->setGeometry(QRect(250, 40, 161, 25));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -84,6 +99,9 @@ public:
         serverIP->setText(QCoreApplication::translate("MainWindow", "127.0.0.1", nullptr));
         serverIP->setPlaceholderText(QCoreApplication::translate("MainWindow", "Enter Server IP", nullptr));
         connectButton->setText(QCoreApplication::translate("MainWindow", "Connect To Server", nullptr));
+        groupBox->setTitle(QCoreApplication::translate("MainWindow", "Connection Mode", nullptr));
+        tcpRadioButton->setText(QCoreApplication::translate("MainWindow", "Sockets", nullptr));
+        sharedMemoryRadioButton->setText(QCoreApplication::translate("MainWindow", "Shared Memory", nullptr));
     } // retranslateUi
 
 };
